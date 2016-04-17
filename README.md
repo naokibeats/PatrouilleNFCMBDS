@@ -3,11 +3,11 @@
 Pour le cas où le serveur est en panne où ne marche pas, voici la démarche à suivre pour installer un environnement local.
 </p>
 <ul>
-<li>	Installer un serveur web qui supporte PHP 5.5 ou plus coupler avec un serveur MySQL
+<li>	Installer un serveur web qui supporte PHP 5.5 ou plus coupler, avec un serveur MySQL
 </li>
 <li>	Créer une base de données « policenationale » et importée le fichier « Policenationale.sql » dans le dossier BDD
 </li>
-<li>Configurer le web service (c.f Web Service)</li>
+<li>Configurer le web service (c.f Web Service) https://github.com/naokibeats/ServiceNFC </li>
 <li>	Ouvrir le code source de l’application, changer le serveur (http://192.168.1.7:8888/WebServiceNFC/index.php/ par exemple) et le déployer sur son smartphone.
 </li>
 </ul>
