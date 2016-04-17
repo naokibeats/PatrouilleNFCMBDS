@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:elevation="30dp"
+
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Date de naissance : "
+        android:id="@+id/datenaissance"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Sexe : "
+        android:id="@+id/sexe"
+        android:textColor="#000"
+        android:layout_below="@+id/datenaissance"
+        android:layout_alignParentStart="true"
+        android:paddingTop="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Adresse : "
+        android:id="@+id/adresse"
+        android:textColor="#000"
+        android:layout_below="@+id/sexe"
+        android:layout_alignParentStart="true"
+        android:paddingTop="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Lieu de naissance : "
+        android:id="@+id/lieu"
+        android:textColor="#000"
+        android:layout_below="@+id/adresse"
+        android:layout_alignParentStart="true"
+        android:paddingTop="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Situation matrimoniale : "
+        android:id="@+id/situation"
+        android:textColor="#000"
+        android:layout_below="@+id/lieu"
+        android:layout_alignParentStart="true"
+        android:paddingTop="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Nom père : "
+        android:id="@+id/nompere"
+        android:textColor="#000"
+        android:layout_below="@+id/situation"
+        android:layout_alignParentStart="true"
+        android:paddingTop="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Nom mère : "
+        android:id="@+id/nommere"
+        android:textColor="#000"
+        android:layout_below="@+id/nompere"
+        android:layout_alignParentStart="true"
+        android:paddingTop="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="CIN : "
+        android:id="@+id/cin"
+        android:textColor="#000"
+        android:layout_below="@+id/nommere"
+        android:layout_alignParentStart="true"
+        android:paddingTop="10dp"/>
+</RelativeLayout>

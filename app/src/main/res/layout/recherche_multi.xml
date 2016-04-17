@@ -1,0 +1,279 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/linearLayoutSettings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="@bool/fitsSystemWindows"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/statusBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/statusBarHeight"
+        android:background="?colorPrimaryDark"
+        android:translationZ="4dp" />
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:translationZ="4dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarThumbVertical="@drawable/scrollbar"
+        android:scrollbars="vertical"
+        android:fillViewport="false">
+
+        <FrameLayout
+            android:id="@+id/contentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+            <!-- The main content view -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:clickable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/md_divider" />
+
+
+
+                    <FrameLayout
+                        android:id="@+id/frameLayoutSwitch"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nom"
+                            android:id="@+id/nom"
+                            android:layout_gravity="left|center_vertical"
+                            android:textColor="#000"/>
+
+                        <EditText
+                            android:layout_width="265dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/nomrecherche"
+                            android:layout_gravity="right|center_vertical"
+                            android:textColor="#000"
+                         />
+                    </FrameLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/md_divider" />
+
+
+
+                    <FrameLayout
+                        android:id="@+id/frameLayoutSwitch1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Prenom"
+                            android:id="@+id/prenomrecherches"
+                            android:layout_gravity="left|center_vertical"
+                            android:textColor="#000"/>
+
+                        <EditText
+                            android:layout_width="265dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/prenomrecherche"
+                            android:layout_gravity="right|center_vertical"
+                            android:textColor="#000"
+                            />
+                    </FrameLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/md_divider" />
+
+
+
+                    <FrameLayout
+                        android:id="@+id/frameLayoutSwitch2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Numero Tag"
+                            android:id="@+id/textView121"
+                            android:layout_gravity="left|center_vertical"
+                            android:textColor="#000"/>
+
+                        <EditText
+                            android:layout_width="265dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tagrecherche"
+                            android:layout_gravity="right|center_vertical"
+                            android:textColor="#000"/>
+                    </FrameLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/md_divider" />
+
+
+
+                    <FrameLayout
+                        android:id="@+id/frameLayoutSwitch4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CIN"
+                            android:id="@+id/cin"
+                            android:layout_gravity="left|center_vertical"
+                            android:textColor="#000"/>
+
+                        <EditText
+                            android:layout_width="265dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/cinrecherche"
+                            android:layout_gravity="right|center_vertical"
+                            android:textColor="#000"/>
+                    </FrameLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/md_divider" />
+
+
+
+                    <FrameLayout
+                        android:id="@+id/frameLayoutSwitch3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sexe"
+                            android:id="@+id/idsexe"
+                            android:layout_gravity="left|center_vertical"
+                            android:textColor="#000"/>
+
+                        <Spinner
+                            android:id="@+id/spinnerrecherche"
+                            android:layout_width="251dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical" />
+                    </FrameLayout>
+                </RelativeLayout>
+
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space" />
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/rechercher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/abc_ic_search_api_mtrl_alpha"
+                    fab:fab_colorNormal="@color/md_green_500_75"
+                    fab:fab_colorPressed="@color/md_green_800"
+                    fab:fab_colorRipple="?attr/colorAccent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true" />
+
+
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+
+</LinearLayout>

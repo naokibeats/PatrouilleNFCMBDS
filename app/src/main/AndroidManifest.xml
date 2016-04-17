@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.naokistudio.material.PatrouilleNFC">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.NFC" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme"
+        >
+        <activity
+            android:name="com.mbds.material.PatrouilleNFC.WorkerSplashActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mbds.material.PatrouilleNFC.LoginActivity"
+            android:label="@string/title_activity_login"></activity>
+        <activity
+            android:name="com.mbds.material.PatrouilleNFC.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"></activity>
+        <activity
+            android:name="com.mbds.material.PatrouilleNFC.Settings"
+            android:label="@string/action_settings"
+            android:windowSoftInputMode="adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mbds.material.PatrouilleNFC.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.mbds.material.PatrouilleNFC.DetailActivity"
+            android:label="@string/title_activity_news_detail">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mbds.material.PatrouilleNFC.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.mbds.material.PatrouilleNFC.DetailSearchActivity"
+            android:label="@string/title_activity_news_detail">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mbds.material.PatrouilleNFC.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.mbds.material.PatrouilleNFC.ResultatRechercheActivity"
+            android:label="Résultat de la recherche">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mbds.material.PatrouilleNFC.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.mbds.material.PatrouilleNFC.ProfilDetailActivity"
+            android:label="Information personnel">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mbds.material.PatrouilleNFC.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.mbds.material.PatrouilleNFC.TabProfil"
+            android:label="Information personnel">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mbds.material.PatrouilleNFC.ProfilDetailActivity" />
+        </activity>
+        <activity
+            android:name="com.mbds.material.PatrouilleNFC.TabPermis"
+            android:label="Information permis">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mbds.material.PatrouilleNFC.ProfilDetailActivity" />
+        </activity>
+        <activity
+            android:name="com.mbds.material.PatrouilleNFC.TabInfraction"
+            android:label="Information infraction"
+            android:theme="@style/ListFont">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mbds.material.PatrouilleNFC.ProfilDetailActivity" />
+        </activity>
+
+        <activity
+            android:name="com.mbds.material.PatrouilleNFC.SaisieInfraction"
+            android:label="Saisie infraction"
+            android:windowSoftInputMode="adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mbds.material.PatrouilleNFC.ProfilDetailActivity" />
+        </activity>
+        <activity
+            android:name="com.mbds.material.PatrouilleNFC.Help.DefaultHelp"
+            android:label="@string/title_activity_help"
+            android:theme="@style/FullscreenTheme"></activity>
+
+    </application>
+
+</manifest>
