@@ -14,4 +14,5 @@ Pour le cas où le serveur est en panne où ne marche pas, voici la démarche à
 
 <h1>EDIT </h1>
 <p> Pour tester le scan il faut écrire dans le tag NFC, en format text plain (avec NFC Tools ou autre applications) un numéro  de  tag de personne  présente dans la  bdd. Exp: 123456789 pour la base actuelle  </p>
-<h2>Veuillez utiliser ce fichier comme bdd pour une installation locale : https://github.com/naokibeats/ServiceNFC/blob/master/bdd/Policenationale.sql</h2>
+<h2>Remarque</h2>
+<p>Veuillez utiliser ce fichier comme bdd pour une installation locale : https://github.com/naokibeats/ServiceNFC/blob/master/bdd/Policenationale.sql</p>
