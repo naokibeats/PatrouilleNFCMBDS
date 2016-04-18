@@ -11,3 +11,6 @@ Pour le cas où le serveur est en panne où ne marche pas, voici la démarche à
 <li>	Ouvrir le code source de l’application, changer le serveur (http://192.168.1.7:8888/WebServiceNFC/index.php/ par exemple) et le déployer sur son smartphone.
 </li>
 </ul>
+
+<h1>EDIT </h1>
+<p> Pour tester le scan il faut écrire dans le tag NFC un numéro  de  tag de personne  dans la  bdd. Exp: 123456789 pour la base actuelle  </p>
