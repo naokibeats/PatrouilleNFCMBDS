@@ -13,4 +13,4 @@ Pour le cas où le serveur est en panne où ne marche pas, voici la démarche à
 </ul>
 
 <h1>EDIT </h1>
-<p> Pour tester le scan il faut écrire dans le tag NFC un numéro  de  tag de personne  dans la  bdd. Exp: 123456789 pour la base actuelle  </p>
+<p> Pour tester le scan il faut écrire dans le tag NFC, en format text plain (avec NFC Tools ou autre applications) un numéro  de  tag de personne  présente dans la  bdd. Exp: 123456789 pour la base actuelle  </p>
