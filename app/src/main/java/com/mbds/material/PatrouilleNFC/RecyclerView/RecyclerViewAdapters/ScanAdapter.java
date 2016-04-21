@@ -60,8 +60,10 @@ public class ScanAdapter extends RecyclerView.Adapter<ScanAdapter.ViewHolder>{
 
     @Override
     public int getItemCount() {
+        if(scans!=null)
         return scans.size();
-    }
+        else
+            return 0;    }
     public static class ViewHolder extends RecyclerView.ViewHolder {
         public View view;
 
